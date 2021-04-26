@@ -13,7 +13,8 @@ input_bam_list=$1
 output_dir=$2
 
 # Reference chrom sizes data
-chrom_sizes='/projects/ps-yeolab3/bay001/reference_data/hg19/hg19.chrom.sizes'
+# e.g. /projects/ps-yeolab3/bay001/reference_data/hg19/hg19.chrom.sizes
+chrom_sizes=$3
 
 
 for bamfilename in $(cat $input_bam_list)
