@@ -6,12 +6,10 @@ module load makebigwigfiles;
 # INPUTS:
 
 # This should be the full path to a text file where each row is the full path to a bam file from which you wish to make stranded bigwigs files.
-#input_bam_list="bam_to_bw_inputs.txt"
 input_bam_list=$1
 
 # The directory where all outputs from this script should be placed -- a folder will be generated within this folder with the name of each sample,
 # and all files for that particular sample will be place within this sample-specific subfolder.
-#output_dir='/projects/ps-yeolab3/ekofman/RPS2_visualization/bigwigs'
 output_dir=$2
 
 # Reference chrom sizes data
